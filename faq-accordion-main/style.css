@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: pink; /* SVG dışındaki alanlar pembe olacak */
+  min-height: 100vh;
+  min-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background: url("./assets/images/background-pattern-desktop.svg") no-repeat
+      top,
+    hsl(275, 100%, 97%);
+  background-size: 100% auto;
+  background-attachment: fixed;
+}
+
+.header{
+    display: flex;
+    margin-bottom: 30px;
+    margin: 50px;
+    margin-left: 5rem;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+h1{
+    margin-left: 25px;
+    font-size: 50px;
+    color: hsl(292, 42%, 14%);
+    font-weight: bold;
+}
+
+.card{
+    margin: auto;
+    background-color: white;
+    width: 720px;
+    min-height: 650px;
+    border-radius: 15px;
+    max-height:max-content;
+}
+
+hr{
+    border: 1px solid hsl(275, 100%, 97%);
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.question-one{
+    margin-left: 5rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    display: flex;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: hsl(292, 42%, 14%);
+}
+
+.question-two{
+    margin-left: 5rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    display: flex;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: hsl(292, 42%, 14%);
+}
+
+.question-three{
+    margin-left: 5rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    display: flex;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: hsl(292, 42%, 14%);
+}
+
+.question-four{
+    margin-left: 5rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    display: flex;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: hsl(292, 42%, 14%);
+}
+
+.question-one > img{
+    margin-left: 60px;
+    cursor: pointer;
+}
+
+.question-two > img{
+    margin-left: 300px;
+    cursor: pointer;
+}
+
+.question-three > img{
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.question-four > img{
+    margin-left: 100px;
+    cursor: pointer;
+}
+
+p{
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: hsl(292, 16%, 49%);
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 2rem;
+}
+
+img:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 0.5s ease;
+}
