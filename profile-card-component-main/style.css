@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: hsl(185, 75%, 39%);
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Ortalamak için ekledim */
+    min-height: 100vh;
+    background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 48vw bottom 40vh, left 45vw top 44vh;
+}
+
+.card {
+    width: 80vw; /* Responsive genişlik ayarı */
+    max-width: 400px; /* Kartın maksimum genişliği */
+    background-color: white;
+    border-radius: 16px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    display: flex; /* Flexbox için */
+    flex-direction: column;
+    align-items: center; /* İçeriği ortalamak için */
+}
+
+.headerbg {
+    width: 100%;
+    height: 20vh;
+    background-image: url(./images/bg-pattern-card.svg);
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+img {
+    top: 4.5rem;
+    position: absolute;
+    border-radius: 50px;
+    border: 5px solid white;
+    transform: translateX(-50%); /* Ortalamak için */
+    left: 50%; /* Ortalamak için */
+}
+
+.bio {
+    margin-top: 2rem; /* Responsive için biraz daha fazla boşluk verdim */
+    text-align: center; /* Yazıları ortalamak için */
+    font-size: 18px;
+}
+
+.values, .desc {
+    display: flex;
+    justify-content: center; /* Ortalamak için */
+    width: 100%; /* Responsive düzen */
+    
+}
+
+.desc{
+    justify-content: space-evenly;
+    margin-top: -1.5rem;
+    margin-bottom: 2rem;
+}
+
+hr {
+    border: 1px solid hsla(227, 10%, 46%, 0.2);
+    width: 100%; /* Ortalamak için */
+}
+
+.desc > p {
+    font-weight: 400;
+    color: hsl(227, 10%, 46%);
+    font-size: 12px;
+    letter-spacing: 2px;
+}

@@ -1,0 +1,178 @@
+body {
+  background-color: hsl(30, 18%, 87%);
+}
+
+.content {
+  border: solid 2px white;
+  border-radius: 15px;
+  background-color: white;
+  width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+}
+
+img {
+  border-radius: 15px;
+  margin: 2rem;
+  width: 620px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.heading {
+  margin-left: 50px;
+  font-family: "Young Serif", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.description {
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 16px;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.prepation {
+  background-color: hsl(330, 100%, 98%);
+  border-radius: 15px;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ingredients{
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h3 {
+  margin: 10px;
+  padding-top: 25px;
+  padding-left: 15px;
+  color: hsl(332, 51%, 32%);
+}
+
+li {
+  margin: 10px;
+  padding-bottom: 10px;
+}
+
+h2 {
+  color: hsl(14, 45%, 36%);
+  margin-left: 50px;
+  font-family: "Young Serif", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ingredients > ul > li {
+  margin-left: 30px;
+}
+
+hr {
+  margin-left: 40px;
+  margin-right: 40px;
+  color: gray;
+}
+
+.instructions{
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.instructions > ol > li {
+  margin-left: 30px;
+}
+
+.instructions > ol {
+  list-style: none;
+  counter-reset: li;
+}
+
+.instructions > li::before {
+  content: counter(li);
+  color: hsl(14, 45%, 36%);
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+ol {
+  list-style: outside;
+  counter-reset: my-awesome-counter;
+}
+ol li {
+  counter-increment: my-awesome-counter;
+  text-indent: -40px;
+  padding-left: 25px;
+}
+ol li::before {
+  content: counter(my-awesome-counter) ". ";
+  color: hsl(14, 45%, 36%);
+  font-weight: bold;
+  margin-right: 25px;
+}
+
+.values > p{
+  margin-left: 50px;
+}
+
+#carb{
+  margin-left: 350px;
+  color: hsl(14, 45%, 36%);
+  font-weight: bold;
+}
+
+#cal{
+  margin-left: 335px;
+  color: hsl(14, 45%, 36%);
+  font-weight: bold;
+}
+
+#protein{
+  margin-left: 340px;
+  color: hsl(14, 45%, 36%);
+  font-weight: bold;
+}
+
+#fat{
+  margin-left: 365px;
+  color: hsl(14, 45%, 36%);
+  font-weight: bold;
+}
+
+.values{
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#dotspace{
+  margin-left: 20px;
+}
+
+#dspace{
+  margin-left: 30px;
+}
+
+.prepation ul > li::marker{
+  color: hsl(14, 45%, 36%);
+}
+
+.ingredients ul > li::marker{
+  color: hsl(14, 45%, 36%);
+}
