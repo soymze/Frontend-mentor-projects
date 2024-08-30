@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+body{
+    background-color: hsl(217, 54%, 11%);
+}
+
+.card{
+    background-color: hsl(216, 50%, 16%);
+    width: 20%;
+    height: 640px;
+    margin: auto;
+    border-radius: 18px;
+    margin-top: 5%;
+}
+
+#nft{
+    width: 88%;
+    margin: 22px;
+    border-radius: 18px;
+}
+
+h2{
+    color: white;
+    margin-left: 26px;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    margin-top: -5px;
+}
+
+h2:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+p{
+    font-size: 18px;
+    margin-left: 26px;
+    margin-right: 26px;
+    color: white;
+}
+
+.values{
+    display: flex;
+}
+
+.crypto{
+    color: hsl(178, 100%, 50%);
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: medium;
+}
+
+.time{
+    color: hsl(215, 51%, 70%);
+    margin-left: 95px;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: medium;
+}
+
+hr{
+    margin-left: 26px;
+    margin-right: 26px;
+    border-color: hsl(215, 32%, 27%);
+    border-width: 1px;
+}
+
+.user{
+    display: flex;
+}
+
+.user > img{
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 50px;
+    margin-left: 26px;
+    margin-top: 10px;
+}
+
+.user > p{
+    color: hsl(215, 51%, 70%);
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: medium;
+}
+
+.user > span{
+    color: white;
+    margin-left: 8px;
+}
+
+.user > span:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.desc{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    color: hsl(215, 51%, 70%);
+}
+
+svg{
+    vertical-align:-2px;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 22px;
+    left: 22px;
+    width: 88%;
+    height: 88%;
+    border-radius: 15px;
+    background-color: hsla(178, 100%, 50%, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.overlay svg {
+    width: 50px; /* SVG boyutu ayarlanabilir */
+    height: 50px;
+    fill: white; /* SVG'nin rengini ayarla */
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+    cursor: pointer;
+}

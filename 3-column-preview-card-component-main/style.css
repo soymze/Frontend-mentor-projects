@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap');
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.card {
+    width: 60%;
+    margin: auto;
+    margin-top: 10rem;
+    display: flex;
+    border-radius: 7px;
+    overflow: hidden;
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.column {
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(31, 77%, 52%);
+    width: 30%; /* Her sütunun genişliğini belirleyin */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Butonu altta hizalar */
+    padding: 1rem;
+}
+
+.column:nth-child(2) {
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(184, 100%, 22%);
+}
+
+.column:nth-child(3) {
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(179, 100%, 13%);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    margin-left: 3rem;
+    margin-right: 2rem;
+}
+
+button {
+    border-radius: 20px;
+    border: none;
+    height: 2.5rem;
+    width: 7rem;
+    background-color: hsl(0, 0%, 95%);
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    color: currentColor;
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+}
+
+h1 {
+    color: hsl(0, 0%, 95%);
+    font-family: "Big Shoulders Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+svg {
+    margin-top: 3rem;
+    margin-bottom: -1rem;
+}
